@@ -1,0 +1,26 @@
+{
+  "name": "is-regex",
+  "version": "1.0.0",
+  "description": "A utility function to check if a value is a regular expression.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opensly/isRegex.git"
+  },
+  "keywords": [
+    "regex",
+    "regexp",
+    "utility",
+    "check",
+    "validation"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/opensly/isRegex/issues"
+  },
+  "homepage": "https://github.com/opensly/isRegex#readme"
+}
