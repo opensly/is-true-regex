@@ -1,6 +1,6 @@
 {
   "name": "is-true-regex",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A utility function to check if a value is a regular expression.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
