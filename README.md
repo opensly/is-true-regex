@@ -1,11 +1,11 @@
-# isTrueRegex
+# is-true-regex
 
 A utility to check if a value is a RegExp object. Works with both JavaScript and TypeScript.
 
 ## Installation
 
 ```bash
-npm install is-regex
+npm install is-true-regex
 ```
 
 ## Usage
