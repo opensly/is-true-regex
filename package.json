@@ -1,15 +1,22 @@
 {
-  "name": "is-regex",
-  "version": "1.0.0",
+  "name": "is-true-regex",
+  "version": "0.0.1",
   "description": "A utility function to check if a value is a regular expression.",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc && rollup -c",
+    "test": "jest",
+    "prepublishOnly": "npm run build",
+    "clean": "rimraf dist"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/opensly/isRegex.git"
+    "url": "https://github.com/opensly/is-true-regex.git"
   },
   "keywords": [
     "regex",
@@ -18,9 +25,20 @@
     "check",
     "validation"
   ],
+  "author": "Opensly",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/opensly/isRegex/issues"
+    "url": "https://github.com/opensly/is-true-regex/issues"
   },
-  "homepage": "https://github.com/opensly/isRegex#readme"
+  "homepage": "https://github.com/opensly/is-true-regex#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.24",
+    "jest": "^29.7.0",
+    "rimraf": "^5.0.5",
+    "rollup": "^4.12.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.3.3"
+  }
 }

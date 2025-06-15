@@ -1,48 +1,54 @@
-# isRegex
+# isTrueRegex
 
-Determines if a given value is a regular expression.
+A utility to check if a value is a RegExp object. Works with both JavaScript and TypeScript.
 
-## Usage Guide
+## Installation
 
-Some usage examples for the `isRegex` function:
-
-#### Basic Type Checking
-
-```
-import isRegex from './isRegex';
-
-const pattern = /abc/;
-console.log(isRegex(pattern)); // true
-
-const nonPattern = 'abc';
-console.log(isRegex(nonPattern)); // false
+```bash
+npm install is-regex
 ```
 
-#### Validation before using regex methods
-```
-const maybePattern = '/[a-z]/';
+## Usage
 
-if (isRegex(maybePattern)) {
-    console.log(maybePattern.test('hello')); // Executes safely
-} else {
-    console.log('Not a valid regex pattern');
-}
-```
+### JavaScript
+```javascript
+const isTrueRegex = require('is-true-regex');
 
-#### Filtering an Array
-
-```
-const items = [/test/, 'hello', /abc/, 123];
-const regexItems = items.filter(isRegex);
-console.log(regexItems); // [/test/, /abc/]
+isTrueRegex(/abc/); // true
+isTrueRegex(new RegExp('abc')); // true
+isTrueRegex('abc'); // false
+isTrueRegex(null); // false
+isTrueRegex(undefined); // false
 ```
 
-## Support
-Your support inspires & encourage us more. If you are interested to make a donation to us, please click the below PayPal button.
+### TypeScript
+```typescript
+import isTrueRegex from 'is-true-regex';
 
-[![PayPal.me](https://img.shields.io/badge/paypal-donate-119fde.svg)](https://www.paypal.me/LakshmikanthV)
+isTrueRegex(/abc/); // true
+isTrueRegex(new RegExp('abc')); // true
+isTrueRegex('abc'); // false
+isTrueRegex(null); // false
+isTrueRegex(undefined); // false
+```
+
+## API
+
+### `isTrueRegex(value: unknown): value is RegExp` (TypeScript)
+### `isTrueRegex(value: unknown): boolean` (JavaScript)
+
+Checks if the provided value is a RegExp object.
+
+#### Parameters
+
+- `value` - The value to check
+
+#### Returns
+
+`true` if the value is a RegExp object, otherwise `false`
 
 ## License
-This project is licensed under the MIT License.
+
+MIT
 
 
