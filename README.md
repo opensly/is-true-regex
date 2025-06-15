@@ -37,7 +37,7 @@ npm install is-true-regex
 
 ### JavaScript
 ```javascript
-const isTrueRegex = require('is-true-regex');
+import isTrueRegex from "is-true-regex";
 
 // Basic usage
 isTrueRegex(/abc/); // true
