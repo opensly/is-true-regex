@@ -55,7 +55,7 @@ isTrueRegex(new Date()); // false
 
 ### TypeScript
 ```typescript
-import isTrueRegex from 'is-true-regex';
+import isTrueRegex from "is-true-regex";
 
 // Type guard usage
 const value: unknown = /abc/;
