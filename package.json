@@ -35,7 +35,10 @@
     "check",
     "validation"
   ],
-  "author": "Opensly",
+  "author": {
+    "name": "Lakshmikanth Vallampati",
+    "url": "https://github.com/kanthvallampati/"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/opensly/is-true-regex/issues"
